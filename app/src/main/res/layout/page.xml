@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Page"
+    android:background="@mipmap/background1">
+
+    <ImageView
+        android:id="@+id/image_richman"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:layout_gravity="center"
+        android:src="@mipmap/app_img"
+        android:alpha="0.7"/>
+
+    <TextView
+        android:id="@+id/text_titile"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:text="@string/app_name"
+        android:textSize="40sp"
+        android:gravity="center"
+        android:textColor="@color/white" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/nameDBinKon"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/name_1"
+            android:gravity="center"
+            android:background="@color/white"
+            android:alpha="0.7"
+            android:textColor="@drawable/name_button" />
+
+        <Button
+            android:id="@+id/nameShanyuDon"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/name_2"
+            android:gravity="center"
+            android:background="@color/white"
+            android:alpha="0.7"
+            android:textColor="@drawable/name_button"/>
+
+        <Button
+            android:id="@+id/nameZuojunXie"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/name_3"
+            android:gravity="center"
+            android:background="@color/white"
+            android:alpha="0.8"
+            android:textColor="@drawable/name_button"/>
+
+        <Button
+            android:id="@+id/nameMinghangChen"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/name_4"
+            android:gravity="center"
+            android:background="@color/white"
+            android:alpha="0.7"
+            android:textColor="@drawable/name_button"/>
+
+        <Button
+            android:id="@+id/nameJieLee"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/name_5"
+            android:gravity="center"
+            android:background="@color/white"
+            android:alpha="0.7"
+            android:textColor="@drawable/name_button"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/briefIntroduction"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        android:text="@string/Introduction"
+        android:gravity="center"
+        android:ellipsize="end"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        />
+
+
+    <com.example.a12053.voicectroller.Title
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:alpha="0.6">
+    </com.example.a12053.voicectroller.Title>
+
+</LinearLayout>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@mipmap/background2">
+
+    <TextView
+        android:id="@+id/translateTitle"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:text="@string/input"
+        android:gravity="center"
+        android:textSize="50sp"/>
+
+    <TextView
+        android:id="@+id/dialect_text"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" />
+    <Spinner
+        android:id="@+id/dialect_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/main_button"
+        android:gravity="center"
+        android:alpha="0.7"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <Button
+                android:id="@+id/listen_btn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:text="语音听写"
+                android:alpha="0.7"
+                android:background="@drawable/main_button"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/black"
+                android:textSize="20dp"/>
+            <Button
+                android:id="@+id/read_btn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:text="语音合成"
+                android:alpha="0.7"
+                android:background="@drawable/main_button"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/black"
+                android:textSize="20dp"/>
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/content_et"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.7"
+            android:background="@drawable/main_button"
+            android:alpha="0.7"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:cursorVisible="true"
+            android:enabled="true"
+            android:gravity="top"
+            android:inputType="textPhonetic"
+            android:visibility="visible"
+            android:layout_marginTop="20dp"
+            android:hint="输入你要合成的文字..."
+            android:textColor="@color/gray"
+            android:textSize="20dp"
+            android:padding="5dp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="20dp"
+        android:layout_weight="12"
+        android:text="所说内容："
+        android:textSize="20dp"/>
+
+    <com.example.a12053.voicectroller.Title
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:alpha="0.5">
+
+    </com.example.a12053.voicectroller.Title>
+
+</LinearLayout>

@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">声入人心</string>
+
+    <string name="fun_1">首页</string>
+    <string name="fun_2">翻译</string>
+    <string name="fun_3">用户</string>
+
+    <string name="name_1">孔德彬</string>
+    <string name="name_2">董善宇</string>
+    <string name="name_3">谢卓君</string>
+    <string name="name_4">陈明航</string>
+    <string name="name_5">李捷</string>
+
+    <string name="Introduction">中华文化博大精深 而方言也正是其中的重要组成部分</string>
+
+    <string name="input">Voice input</string>
+    <string name="beginInput">Tyoe something here</string>
+    <string name="Dialect">方言选择</string>
+    <string name="translateText">Translate text</string>
+
+    <string name="username">username</string>
+    <string name="password">password</string>
+    <string name="login">login</string>
+
+</resources>
