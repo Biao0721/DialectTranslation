@@ -11,8 +11,14 @@ import android.widget.Toast;
 
 public class Login extends AppCompatActivity {
 
+    public static String name;
+
     private Button btnLogin;
     private EditText et;
+
+    private static void setName(String _name){
+        name = _name;
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,8 +36,8 @@ public class Login extends AppCompatActivity {
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String name;
-                name = et.getText().toString().trim();
+                setName(et.getText().toString().trim());
+
                 if(name.isEmpty()){
                     Toast.makeText(Login.this, "Name is empty",
                             Toast.LENGTH_SHORT).show();
@@ -39,7 +45,6 @@ public class Login extends AppCompatActivity {
                     Toast.makeText(Login.this,"Successful Login",
                             Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent(Login.this,Settings.class);
-                    intent.putExtra("name", name);
                     startActivity(intent);
                 }
             }

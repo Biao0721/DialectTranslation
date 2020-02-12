@@ -17,7 +17,7 @@ public class Settings extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.settings);
         textView = findViewById(R.id.user_name);
-        textView.setText("欢迎回来: " + intent.getExtras().getString("name"));
+        textView.setText("欢迎回来: " + Login.name);
 
         //隐藏标题栏
         ActionBar actionBar=getSupportActionBar();
