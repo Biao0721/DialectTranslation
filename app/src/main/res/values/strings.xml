@@ -22,4 +22,38 @@
     <string name="password">password</string>
     <string name="login">login</string>
 
+    <string name="p1">海南</string>
+    <string name="p2">河南</string>
+    <string name="p3">贵州</string>
+    <string name="p4">甘肃</string>
+    <string name="p5">广西</string>
+    <string name="p6">湖北</string>
+    <string name="p7">青海</string>
+    <string name="p8">陕西</string>
+    <string name="p9">浙江</string>
+    <string name="p10">云南</string>
+    <string name="p11">台湾</string>
+    <string name="p12">西藏</string>
+    <string name="p13">广东</string>
+    <string name="p14">重庆</string>
+    <string name="p15">福建</string>
+    <string name="p16">四川</string>
+    <string name="p17">山东</string>
+    <string name="p18">内蒙</string>
+    <string name="p19">黑龙江</string>
+    <string name="p20">吉林</string>
+    <string name="p21">辽宁</string>
+    <string name="p22">香港</string>
+    <string name="p23">宁夏</string>
+    <string name="p24">湖南</string>
+    <string name="p25">江西</string>
+    <string name="p26">江苏</string>
+    <string name="p27">新疆</string>
+    <string name="p28">北京</string>
+    <string name="p29">天津</string>
+    <string name="p30">山西</string>
+    <string name="p31">河北</string>
+    <string name="p32">中国</string>
+
+
 </resources>

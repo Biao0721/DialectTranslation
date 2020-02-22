@@ -1,5 +1,6 @@
 package com.example.a12053.voicectroller;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -10,6 +11,8 @@ import android.widget.TextView;
 public class Page extends AppCompatActivity {
 
     private Button button1, button2, button3, button4, button5;
+
+    private Button moreBtn;
 
     private Button[] buttons = new Button[]{button1, button2, button3, button4, button5};
 
@@ -26,6 +29,7 @@ public class Page extends AppCompatActivity {
         buttons[2] = findViewById(R.id.nameZuojunXie);
         buttons[3] = findViewById(R.id.nameMinghangChen);
         buttons[4] = findViewById(R.id.nameJieLee);
+        moreBtn    = findViewById(R.id.more);
         ts = findViewById(R.id.briefIntroduction);
 
         //隐藏标题栏
@@ -45,6 +49,7 @@ public class Page extends AppCompatActivity {
         buttons[2].setOnClickListener(onclick);
         buttons[3].setOnClickListener(onclick);
         buttons[4].setOnClickListener(onclick);
+        moreBtn.setOnClickListener(onclick);
     }
 
     private class Onclick implements View.OnClickListener{
@@ -101,6 +106,10 @@ public class Page extends AppCompatActivity {
                     ts.setText("李捷的简介");
                     flag = 4;
                     break;
+                case R.id.more:
+                    Intent intent;
+                    intent = new Intent(Page.this, More.class);
+                    startActivity(intent);
             }
         }
     }

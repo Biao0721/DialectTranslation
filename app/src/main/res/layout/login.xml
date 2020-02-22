@@ -56,7 +56,7 @@
         android:layout_weight="1.5"
         android:layout_marginRight="10dp"
         android:layout_marginLeft="10dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="20dp"
         android:background="@drawable/login_text">
 
         <ImageView
@@ -75,21 +75,48 @@
             android:hint="@string/password"
             android:layout_marginRight="15dp"
             android:inputType="textPassword" />
+    </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp">
+        <Button
+            android:id="@+id/login_register"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="用户注册"
+            android:background="@color/white"
+            android:gravity="left"
+            android:padding="5dp"
+            android:textColor="@color/grey"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="忘记密码"
+            android:background="@color/white"
+            android:gravity="right"
+            android:padding="5dp"
+            android:textColor="@color/grey"/>
     </LinearLayout>
 
     <Button
         android:id="@+id/login"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"
+        android:layout_weight="2"
         android:background="@drawable/login_button"
         android:textColor="@color/white"
         android:text="@string/login"
         android:textSize="20dp"
         android:layout_marginRight="10dp"
         android:layout_marginLeft="10dp"
-        android:layout_marginTop="50dp"/>
+        android:layout_marginTop="20dp"/>
 
     <LinearLayout
         android:layout_width="match_parent"

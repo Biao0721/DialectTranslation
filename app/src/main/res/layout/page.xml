@@ -30,7 +30,8 @@
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1">
+        android:layout_weight="1"
+        android:layout_marginTop="10dp">
 
         <Button
             android:id="@+id/nameDBinKon"
@@ -100,6 +101,19 @@
         android:textSize="15dp"
         />
 
+    <Button
+        android:id="@+id/more"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:background="@color/white"
+        android:text="点击查看更多方言信息"
+        android:textSize="15dp"
+        android:textColor="@color/black"
+        android:gravity="center_vertical"
+        android:drawableLeft="@mipmap/more_p"
+        android:padding="10dp"
+        android:drawablePadding="5dp"/>
 
     <com.example.a12053.voicectroller.Title
         android:layout_width="match_parent"

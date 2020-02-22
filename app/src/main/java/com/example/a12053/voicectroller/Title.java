@@ -41,20 +41,14 @@ public class Title extends LinearLayout {
 
             switch (v.getId()){
                 case R.id.page:
-                    //启用Toast
-                    Toast.makeText(getContext(),"You click page", Toast.LENGTH_SHORT).show();
                     //跳转到Page界面
                     intent = new Intent(getContext(),Page.class);
                     break;
                 case R.id.translate:
-                    //启用Toast
-                    Toast.makeText(getContext(),"You click translate", Toast.LENGTH_SHORT).show();
                     //跳转到Translate界面
                     intent = new Intent(getContext(),MainActivity.class);
                     break;
                 case R.id.settings:
-                    //启用Toast
-                    Toast.makeText(getContext(),"You click settings", Toast.LENGTH_SHORT).show();
                     //跳转到Settings界面
                     intent = new Intent(getContext(),Settings.class);
                     break;
